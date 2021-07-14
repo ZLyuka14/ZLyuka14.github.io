@@ -21,9 +21,11 @@ body {
 
 .info__text {
 	margin-right: 30px;
+	font-size: 19px;
+	text-align: justify;
 }
 
-.info__links{
+.info__links {
 	margin-top: 30px;
 }
 
@@ -38,6 +40,6 @@ a:hover {
 	color: yellow;
 }
 
-.stop{
+.stop {
 	margin-left: 0px;
 }
