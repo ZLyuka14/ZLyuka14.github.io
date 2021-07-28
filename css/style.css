@@ -6,16 +6,21 @@ body {
 .container {
 	max-width: 1180px;
 	margin: auto;
-	display: flex;
-	justify-items: center;
+}
+
+.main-style{
 	background-color: rgba(100, 100, 100, 0.5);
-	padding: 20px;
 	border-radius: 5px;
+	padding: 20px;
+}
+
+.header__row{
+	display: flex;
 }
 
 .info__pic img {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: auto;
 	border-radius: 50%;
 }
 
@@ -23,6 +28,27 @@ body {
 	margin-right: 30px;
 	font-size: 19px;
 	text-align: justify;
+}
+
+.surname{
+	margin: 0;
+}
+
+.stage{
+	font-size: 15px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+
+.hr__title{
+	background-color: black;
+	border: none;
+	height: 2px;
+}
+
+.text-link{
+	text-decoration: underline;
 }
 
 .info__links {
@@ -42,4 +68,53 @@ a:hover {
 
 .stop {
 	margin-left: 0px;
+}
+/* portfolio */
+.portfolio {
+	margin-top: 25px;
+}
+.protfolio__title {
+	font-size: 35px;
+	font-weight: 700;
+	margin: 0 0 15px 0;
+}
+.portfolio__row {
+	display: flex;
+}
+.portfolio__column {
+}
+.portfolio__item {
+	width: 100%;
+	position: relative;
+
+}
+.portfolio__item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+
+}
+
+.portfolio__item-title {
+	font-size: 15px;
+	text-align: center;
+}
+.link-block{
+	position: relative;
+	width: 300px;
+	height: 150px;
+}
+.portfolio__link{
+}
+
+.portfolio__link:hover::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 10px solid yellow;
+	border-radius: 10px;
+
 }
