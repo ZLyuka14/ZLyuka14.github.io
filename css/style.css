@@ -18,27 +18,27 @@ body {
   display: flex;
 }
 
-.header__text{
-	font-size: 22px;
+.header__text {
+  font-size: 22px;
 }
 
 .header__right {
   background-color: rgba(0, 0, 0, 0.267);
-	padding: 15px;
-	border: 2px solid black;
-	border-radius: 5px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-.relocation{
-	font-size: 20px;
-	font-weight: 700;
+.relocation {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .info__pic img {
   width: 300px;
   height: auto;
   border-radius: 50%;
-	border: 2px solid black;
+  border: 2px solid black;
 }
 
 .info__text {
