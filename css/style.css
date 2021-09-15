@@ -16,6 +16,7 @@ body {
 
 .header__row {
   display: flex;
+  align-items: flex-start;
 }
 
 .header__text {
