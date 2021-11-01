@@ -17,7 +17,7 @@ body {
 .header__row {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 .header__column {
