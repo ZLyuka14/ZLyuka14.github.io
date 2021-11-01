@@ -16,23 +16,48 @@ body {
 
 .header__row {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.header__column {
+  flex: 1 0 70%;
 }
 
 .header__text {
-  font-size: 22px;
+  font-size: 19px;
+  line-height: 1.3em;
+  text-align: justify;
+  margin-right: 30px;
+}
+
+.header__text p {
+  margin: 0 0 15px 0;
+}
+
+.about__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0 20px 0;
+}
+
+.about__link {
+  text-decoration: underline;
 }
 
 .header__right {
-  background-color: rgba(0, 0, 0, 0.267);
+  background-color: rgba(255, 255, 255, 0.308);
   padding: 15px;
   border: 2px solid black;
   border-radius: 5px;
+  flex: 0 0 auto;
 }
 
 .relocation {
   font-size: 20px;
   font-weight: 700;
+  margin: 10px 0 0 0;
 }
 
 .info__pic img {
@@ -69,7 +94,7 @@ body {
 }
 
 .info__links {
-  margin-top: 30px;
+  margin: 10px 0;
 }
 
 a {
@@ -88,12 +113,17 @@ a:hover {
 }
 
 code {
-  background-color: rgba(0, 0, 0, 0.473);
+  background-color: rgba(0, 0, 0, 0.849);
   color: yellowgreen;
 }
 
 .header__skills {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.header__skills li {
+  margin: 2px 0;
 }
 
 .stop {
@@ -171,6 +201,10 @@ code {
   flex: 1 0 auto;
 }
 
+.pet__description li {
+  list-style-type: none;
+}
+
 .pet__git-link {
   font-size: 18px;
   text-align: center;
@@ -185,4 +219,58 @@ code {
 
 .pet__git-link:hover {
   transform: scale(1.1);
+}
+
+.spoiler {
+  position: relative;
+  overflow: hidden;
+  margin: 5px 0;
+}
+
+.spoiler__link {
+  position: relative;
+  z-index: 2;
+  background-color: greenyellow;
+  padding: 5px;
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+.spoiler__link::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid black;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid black;
+  border-top: 15px solid transparent;
+}
+
+.spoiler__content {
+  z-index: 1;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.308);
+  padding: 5px;
+  border: 2px solid black;
+  border-top: none;
+}
+
+.hidden {
+  margin-top: -74px;
 }
